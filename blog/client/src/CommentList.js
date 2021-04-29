@@ -1,4 +1,4 @@
-export default (comments) => {
+export default ({comments}) => {
     const renderedComments = Object.values(comments).map(comment => {
         return <li  key={comment.id}>{comment.content}</li>;                
     })
