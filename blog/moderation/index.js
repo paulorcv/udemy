@@ -24,7 +24,9 @@ app.post('/events', async (req, res) => {
                 status,
                 content: data.content
             }
-        });
+        }).catch((err) => {
+            console.log(err.message);
+          });
     }
 
     res.send({});
