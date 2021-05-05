@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: moderation
-spec:
-  containers:
-    - name: moderation
-      image: paulorcv/moderation:0.0.1
